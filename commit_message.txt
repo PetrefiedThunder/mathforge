@@ -1,0 +1,15 @@
+[tweaks] Integrated full production-grade infra, regulatory compliance engine, and adaptive UI
+
+- Added Terraform modules and Helm charts for production deployment.
+- Introduced the Regulatory Compliance Engine (regcomp) enforcing ARIA/WCAG and export-control rules.
+- Developed Adaptive UI with WCAG/ARIA-ready React components served via Node/Express.
+- Expanded services under /services: gitea, simulation, search, sms, regcomp, adaptive-ui.
+- Overhauled the SMS microservice to support multiple Millennium Prize Problems:
+  • Dynamic registration via a problems table
+  • SMS parsing for <problem_id>: <idea> contributions
+  • Task broadcasting per problem
+  • Queuing contributions for AI clarification and feasibility testing
+- Integrated init scripts to bootstrap both problem and policy databases.
+- Updated Docker Compose configuration to include all services.
+
+This commit sets the foundation for a modular, inclusive, and adaptive research environment that empowers mass participation in solving complex math & physics problems.
