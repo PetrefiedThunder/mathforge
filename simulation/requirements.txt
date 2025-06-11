@@ -2,4 +2,3 @@ fastapi
 uvicorn
 redis
 numpy
-scipy
